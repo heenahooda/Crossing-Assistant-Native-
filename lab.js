@@ -2,10 +2,11 @@
 var Lab = (function () {
 'use strict';
 const MODELS = [
-  { id:'canonical_gt_fp16',     label:'Canonical GT FP16',     file:'models/canonical_gt_fp16.tflite' },
-  { id:'canonical_pseudo_fp16', label:'Canonical Pseudo FP16', file:'models/canonical_pseudo_fp16.tflite' },
-  { id:'normal_gt_fp16',        label:'Normal GT FP16',        file:'models/normal_gt_fp16.tflite' },
-  { id:'normal_pseudo_fp16',    label:'Normal Pseudo FP16',    file:'models/normal_pseudo_fp16.tflite' }
+  {
+    id: 'canonical_pseudo_fp16',
+    label: 'Canonical Pseudo FP16',
+    file: './canonical_pseudo_fp16.tflite'
+  }
 ];
 const LAB = {
 en:{ labModel:"Detection model", labStatus_idle:"Not loaded", labStatus_loading:"Loading…", labStatus_ready:"Ready", labStatus_missing:"File not found", labStatus_error:"Error",
